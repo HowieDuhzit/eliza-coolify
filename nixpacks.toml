@@ -1,0 +1,18 @@
+[build]
+# Specify Python and Node.js versions
+providers = [
+    "python",
+    "node"
+]
+
+[build.python]
+# Specify Python version range (2.7 and above)
+version = ">=2.7"
+
+[build.node]
+# Specify Node.js version 23 and above
+version = ">=23.0.0"
+
+# Use pnpm as the package manager
+[build.node.packageManager]
+type = "pnpm"
